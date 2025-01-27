@@ -43,7 +43,7 @@ const cardImages = {
   'Jh': '/src/assets/cards/jack_of_hearts2.svg',
   'Qh': '/src/assets/cards/queen_of_hearts2.svg',
   'Kh': '/src/assets/cards/king_of_hearts2.svg',
-  'Ah': '/src/assets/cards/ace_of_hearts2.svg',
+  'Ah': '/src/assets/cards/ace_of_hearts.svg',
 
   // Spades
   '2s': '/src/assets/cards/2_of_spades.svg',
