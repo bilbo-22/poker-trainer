@@ -1,4 +1,3 @@
-```markdown
 # Poker Training Game
 
 A React-based poker training application to help players improve their preflop decision-making skills.
@@ -58,4 +57,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-```
