@@ -15,6 +15,7 @@ git add .
 git commit -m "$1"
 
 # Push to main branch
+git remote add origin git@github.com:bilbo-22/poker-trainer.git
 git push origin main
 
 echo "Changes pushed successfully!"
