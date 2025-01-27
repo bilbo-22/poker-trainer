@@ -1,5 +1,8 @@
 # Poker Training Game
 
+![image](https://github.com/user-attachments/assets/c8f87e71-3fc3-4978-ae4d-05ee83e60d63)
+
+
 A React-based poker training application to help players improve their preflop decision-making skills.
 
 ## Features
@@ -7,7 +10,7 @@ A React-based poker training application to help players improve their preflop d
 - Interactive poker hand scenarios
 - Real-time feedback on decisions
 - Score tracking
-- Keyboard shortcuts (R: Raise, C: Call, F: Fold)
+- to-be-added ~Keyboard shortcuts (A: Fold, S: Call, D: Raise)~
 - Visual card representation
 - Position and table condition indicators
 
@@ -23,7 +26,7 @@ A React-based poker training application to help players improve their preflop d
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/poker-trainer.git
+   git clone https://github.com/bilbo-22/poker-trainer.git
    ```
 
 2. Install dependencies:
@@ -44,11 +47,6 @@ A React-based poker training application to help players improve their preflop d
 - Choose between Raise, Call, or Fold for each hand
 - Get immediate feedback on your decision
 - Track your progress with the score counter
-- Use keyboard shortcuts for faster play:
-  - 'R' for Raise
-  - 'C' for Call
-  - 'F' for Fold
-  - 'Space' or 'Enter' for Next Hand
 
 ## Contributing
 
