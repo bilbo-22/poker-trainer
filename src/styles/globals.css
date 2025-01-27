@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform 
+           hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-50 
+           shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-blue-500 to-blue-600 text-white 
+           hover:from-blue-600 hover:to-blue-700 focus:ring-blue-400;
+  }
+  
+  .btn-danger {
+    @apply btn bg-gradient-to-r from-red-500 to-red-600 text-white 
+           hover:from-red-600 hover:to-red-700 focus:ring-red-400;
+  }
+  
+  .btn-success {
+    @apply btn bg-gradient-to-r from-green-500 to-green-600 text-white 
+           hover:from-green-600 hover:to-green-700 focus:ring-green-400;
+  }
+  
+  .card-container {
+    @apply relative p-2 transition-all duration-200 transform
+           hover:scale-105 hover:-translate-y-2;
+  }
+
+  .game-container {
+    @apply backdrop-blur-sm bg-white/10 rounded-2xl p-8 shadow-2xl
+           border border-white/20;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg transition-transform duration-200 
+           hover:shadow-xl;
+  }
+}
+
+/* Custom background with poker theme */
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 
+         min-h-screen text-gray-100 antialiased;
+  background-image: radial-gradient(circle at center,
+    rgba(52, 211, 153, 0.1) 0%,
+    rgba(16, 185, 129, 0.05) 25%,
+    transparent 100%
+  );
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full hover:bg-gray-500 transition-colors duration-200;
+}
+
+/* Card hover effects */
+.card-container img {
+  @apply transition-all duration-300 rounded-lg shadow-md;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.card-container:hover img {
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* Button press effect */
+.btn:active {
+  @apply transform scale-95;
+}
+
+/* Glass morphism effects */
+.glass {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
+
+/* Text gradient */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500;
+}
+
+/* Animation classes */
+.hover-float {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+.spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading animation */
+.loading {
+  @apply animate-pulse bg-gray-700 rounded;
+}
+
+/* Focus styles */
+*:focus-visible {
+  @apply outline-none ring-2 ring-blue-400 ring-opacity-50;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-emerald-500/30 text-white;
+}
